@@ -1,0 +1,627 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    
+    <vType id="Bus" minGap="3.00" maxSpeed="11.11" vClass="bus" color="red" accel="1" decel="2.5" tau="1.5" />
+    <vType id="Livianos" maxSpeed="13.89" vClass="private" color="blue" />
+    
+    <flow id="1_B1" type="Livianos" begin="0.00" from="542395213#0" to="45393798#3" end="3600.00" vehsPerHour="57" />
+    <flow id="1_B1_6_D3" type="Livianos" begin="0.00" from="542395213#0" to="338566775#3" end="3600.00" vehsPerHour="390" />
+    <flow id="2_A1" type="Livianos" begin="0.00" from="427451695#1" to="49222372#1" end="3600.00" vehsPerHour="570" />
+    <flow id="2_A2" type="Livianos" begin="0.00" from="427451695#1" to="542395217" end="3600.00" vehsPerHour="65" />
+    <flow id="2_A3" type="Livianos" begin="0.00" from="427451695#1" to="45393798#3" end="3600.00" vehsPerHour="23" />
+    <flow id="2_A3_6_D3" type="Livianos" begin="0.00" from="427451695#1" to="338566775#3" end="3600.00" vehsPerHour="64" />
+    <flow id="7_C1" type="Livianos" begin="0.00" from="247044712#0" to="338566775#3" end="3600.00" vehsPerHour="102" />
+    <flow id="7_C3_3_C1" type="Livianos" begin="0.00" from="247044712#0" to="542395217" end="3600.00" vehsPerHour="6" />
+    <flow id="7_C3_3_C3" type="Livianos" begin="0.00" from="247044712#0" to="49222372#1" end="3600.00" vehsPerHour="10" />
+    <flow id="8_B1" type="Livianos" begin="0.00" from="334948974#1" to="45393798#2" end="3600.00" vehsPerHour="4" />
+    <flow id="8_B1_3_C1" type="Livianos" begin="0.00" from="334948974#1" to="542395217" end="3600.00" vehsPerHour="68" />
+    <flow id="8_B1_3_C3" type="Livianos" begin="0.00" from="334948974#1" to="49222372#1" end="3600.00" vehsPerHour="116" />
+    <flow id="8_B2" type="Livianos" begin="0.00" from="334948974#1" to="E5" end="3600.00" vehsPerHour="38" />
+    <flow id="9_A1" type="Livianos" begin="0.00" from="48859314#0" to="45393798#3" end="3600.00" vehsPerHour="28" />
+    <flow id="9_A1_3_C1" type="Livianos" begin="0.00" from="48859314#0" to="542395217" end="3600.00" vehsPerHour="16" />
+    <flow id="9_A1_3_C3" type="Livianos" begin="0.00" from="48859314#0" to="49222372#1" end="3600.00" vehsPerHour="28" />
+    <flow id="9_A2" type="Livianos" begin="0.00" from="48859314#0" to="338566775#3" end="3600.00" vehsPerHour="10" />
+    <flow id="Linea22" type="Bus" begin="0.00" line="L22" from="48859314#0" to="542395217" end="3600.00" vehsPerHour="7">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27" type="Bus" begin="0.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="3600.00" vehsPerHour="18">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12" type="Bus" begin="0.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="3600.00" vehsPerHour="21">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5" type="Bus" begin="0.00" line="L5" from="48859314#0" to="49222372#1" end="3600.00" vehsPerHour="5">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2" type="Bus" begin="0.00" line="L7_10_2" from="334948974#1" to="542395217" end="3600.00" vehsPerHour="12">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5" type="Bus" begin="0.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="3600.00" vehsPerHour="22">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi" type="Bus" begin="0.00" line="Lturi" from="48859314#0" to="338566775#3" end="3600.00" vehsPerHour="4">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_2" type="Livianos" begin="3600.00" from="542395213#0" to="45393798#3" end="7200.00" vehsPerHour="8" />
+    <flow id="1_B1_6_D3_2" type="Livianos" begin="3600.00" from="542395213#0" to="338566775#3" end="7200.00" vehsPerHour="733" />
+    <flow id="2_A1_2" type="Livianos" begin="3600.00" from="427451695#1" to="49222372#1" end="7200.00" vehsPerHour="815" />
+    <flow id="2_A2_2" type="Livianos" begin="3600.00" from="427451695#1" to="542395217" end="7200.00" vehsPerHour="110" />
+    <flow id="2_A3_2" type="Livianos" begin="3600.00" from="427451695#1" to="45393798#3" end="7200.00" vehsPerHour="2" />
+    <flow id="2_A3_6_D3_2" type="Livianos" begin="3600.00" from="427451695#1" to="338566775#3" end="7200.00" vehsPerHour="105" />
+    <flow id="7_C1_2" type="Livianos" begin="3600.00" from="247044712#0" to="338566775#3" end="7200.00" vehsPerHour="294" />
+    <flow id="7_C3_3_C1_2" type="Livianos" begin="3600.00" from="247044712#0" to="542395217" end="7200.00" vehsPerHour="36" />
+    <flow id="7_C3_3_C3_2" type="Livianos" begin="3600.00" from="247044712#0" to="49222372#1" end="7200.00" vehsPerHour="12" />
+    <flow id="8_B1_3_C1_2" type="Livianos" begin="3600.00" from="334948974#1" to="542395217" end="7200.00" vehsPerHour="267" />
+    <flow id="8_B1_3_C3_2" type="Livianos" begin="3600.00" from="334948974#1" to="49222372#1" end="7200.00" vehsPerHour="89" />
+    <flow id="8_B2_2" type="Livianos" begin="3600.00" from="334948974#1" to="E5" end="7200.00" vehsPerHour="136" />
+    <flow id="9_A1_3_C1_2" type="Livianos" begin="3600.00" from="48859314#0" to="542395217" end="7200.00" vehsPerHour="127" />
+    <flow id="9_A1_3_C3_2" type="Livianos" begin="3600.00" from="48859314#0" to="49222372#1" end="7200.00" vehsPerHour="43" />
+    <flow id="9_A2_2" type="Livianos" begin="3600.00" from="48859314#0" to="338566775#3" end="7200.00" vehsPerHour="28" />
+    <flow id="Calle1_3_C1_2" type="Livianos" begin="3600.00" from="47638127" to="542395217" end="7200.00" vehsPerHour="72" />
+    <flow id="Calle1_3_C3_2" type="Livianos" begin="3600.00" from="47638127" to="49222372#1" end="7200.00" vehsPerHour="24" />
+    <flow id="Linea22_2" type="Bus" begin="3600.00" line="L22" from="48859314#0" to="542395217" end="7200.00" vehsPerHour="7">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_2" type="Bus" begin="3600.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="7200.00" vehsPerHour="22">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_2" type="Bus" begin="3600.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="7200.00" vehsPerHour="21">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_2" type="Bus" begin="3600.00" line="L5" from="48859314#0" to="49222372#1" end="7200.00" vehsPerHour="7">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_2" type="Bus" begin="3600.00" line="L7_10_2" from="334948974#1" to="542395217" end="7200.00" vehsPerHour="13">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_2" type="Bus" begin="3600.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="7200.00" vehsPerHour="44">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_2" type="Bus" begin="3600.00" line="Lturi" from="48859314#0" to="338566775#3" end="7200.00" vehsPerHour="4">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_3" type="Livianos" begin="7200.00" from="542395213#0" to="45393798#3" end="10800.00" vehsPerHour="9" />
+    <flow id="1_B1_6_D3_3" type="Livianos" begin="7200.00" from="542395213#0" to="338566775#3" end="10800.00" vehsPerHour="820" />
+    <flow id="2_A1_3" type="Livianos" begin="7200.00" from="427451695#1" to="49222372#1" end="10800.00" vehsPerHour="861" />
+    <flow id="2_A2_3" type="Livianos" begin="7200.00" from="427451695#1" to="542395217" end="10800.00" vehsPerHour="98" />
+    <flow id="2_A3_3" type="Livianos" begin="7200.00" from="427451695#1" to="45393798#3" end="10800.00" vehsPerHour="36" />
+    <flow id="2_A3_6_D3_3" type="Livianos" begin="7200.00" from="427451695#1" to="338566775#3" end="10800.00" vehsPerHour="88" />
+    <flow id="7_C1_3" type="Livianos" begin="7200.00" from="247044712#0" to="338566775#3" end="10800.00" vehsPerHour="470" />
+    <flow id="7_C3_3_C1_3" type="Livianos" begin="7200.00" from="247044712#0" to="542395217" end="10800.00" vehsPerHour="59" />
+    <flow id="7_C3_3_C3_3" type="Livianos" begin="7200.00" from="247044712#0" to="49222372#1" end="10800.00" vehsPerHour="19" />
+    <flow id="8_B1_3_C1_3" type="Livianos" begin="7200.00" from="334948974#1" to="542395217" end="10800.00" vehsPerHour="361" />
+    <flow id="8_B1_3_C3_3" type="Livianos" begin="7200.00" from="334948974#1" to="49222372#1" end="10800.00" vehsPerHour="113" />
+    <flow id="8_B2_3" type="Livianos" begin="7200.00" from="334948974#1" to="E5" end="10800.00" vehsPerHour="174" />
+    <flow id="9_A1_3_C1_3" type="Livianos" begin="7200.00" from="48859314#0" to="542395217" end="10800.00" vehsPerHour="231" />
+    <flow id="9_A1_3_C3_3" type="Livianos" begin="7200.00" from="48859314#0" to="49222372#1" end="10800.00" vehsPerHour="73" />
+    <flow id="9_A2_3" type="Livianos" begin="7200.00" from="48859314#0" to="338566775#3" end="10800.00" vehsPerHour="56" />
+    <flow id="Calle1_3_C1_3" type="Livianos" begin="7200.00" from="47638127" to="542395217" end="10800.00" vehsPerHour="81" />
+    <flow id="Calle1_3_C3_3" type="Livianos" begin="7200.00" from="47638127" to="49222372#1" end="10800.00" vehsPerHour="25" />
+    <flow id="Linea22_3" type="Bus" begin="7200.00" line="L22" from="48859314#0" to="542395217" end="10800.00" vehsPerHour="5">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_3" type="Bus" begin="7200.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="10800.00" vehsPerHour="23">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_3" type="Bus" begin="7200.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="10800.00" vehsPerHour="18">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_3" type="Bus" begin="7200.00" line="L5" from="48859314#0" to="49222372#1" end="10800.00" vehsPerHour="9">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_3" type="Bus" begin="7200.00" line="L7_10_2" from="334948974#1" to="542395217" end="10800.00" vehsPerHour="15">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_3" type="Bus" begin="7200.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="10800.00" vehsPerHour="44">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_3" type="Bus" begin="7200.00" line="Lturi" from="48859314#0" to="338566775#3" end="10800.00" vehsPerHour="2">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_6_D3_4" type="Livianos" begin="10800.00" from="542395213#0" to="338566775#3" end="14400.00" vehsPerHour="715" />
+    <flow id="2_A1_4" type="Livianos" begin="10800.00" from="427451695#1" to="49222372#1" end="14400.00" vehsPerHour="706" />
+    <flow id="2_A2_4" type="Livianos" begin="10800.00" from="427451695#1" to="542395217" end="14400.00" vehsPerHour="106" />
+    <flow id="2_A3_6_D3_4" type="Livianos" begin="10800.00" from="427451695#1" to="338566775#3" end="14400.00" vehsPerHour="74" />
+    <flow id="7_C1_4" type="Livianos" begin="10800.00" from="247044712#0" to="338566775#3" end="14400.00" vehsPerHour="520" />
+    <flow id="7_C3_3_C1_4" type="Livianos" begin="10800.00" from="247044712#0" to="542395217" end="14400.00" vehsPerHour="38" />
+    <flow id="7_C3_3_C3_4" type="Livianos" begin="10800.00" from="247044712#0" to="49222372#1" end="14400.00" vehsPerHour="16" />
+    <flow id="8_B1_3_C1_4" type="Livianos" begin="10800.00" from="334948974#1" to="542395217" end="14400.00" vehsPerHour="339" />
+    <flow id="8_B1_3_C3_4" type="Livianos" begin="10800.00" from="334948974#1" to="49222372#1" end="14400.00" vehsPerHour="147" />
+    <flow id="8_B2_4" type="Livianos" begin="10800.00" from="334948974#1" to="E5" end="14400.00" vehsPerHour="200" />
+    <flow id="9_A1_3_C1_4" type="Livianos" begin="10800.00" from="48859314#0" to="542395217" end="14400.00" vehsPerHour="237" />
+    <flow id="9_A1_3_C3_4" type="Livianos" begin="10800.00" from="48859314#0" to="49222372#1" end="14400.00" vehsPerHour="103" />
+    <flow id="9_A2_4" type="Livianos" begin="10800.00" from="48859314#0" to="338566775#3" end="14400.00" vehsPerHour="86" />
+    <flow id="Calle1_3_C1_4" type="Livianos" begin="10800.00" from="47638127" to="542395217" end="14400.00" vehsPerHour="45" />
+    <flow id="Calle1_3_C3_4" type="Livianos" begin="10800.00" from="47638127" to="49222372#1" end="14400.00" vehsPerHour="20" />
+    <flow id="Linea22_4" type="Bus" begin="10800.00" line="L22" from="48859314#0" to="542395217" end="14400.00" vehsPerHour="6">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_4" type="Bus" begin="10800.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="14400.00" vehsPerHour="21">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_4" type="Bus" begin="10800.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="14400.00" vehsPerHour="20">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_4" type="Bus" begin="10800.00" line="L5" from="48859314#0" to="49222372#1" end="14400.00" vehsPerHour="6">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_4" type="Bus" begin="10800.00" line="L7_10_2" from="334948974#1" to="542395217" end="14400.00" vehsPerHour="11">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_4" type="Bus" begin="10800.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="14400.00" vehsPerHour="41">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_4" type="Bus" begin="10800.00" line="Lturi" from="48859314#0" to="338566775#3" end="14400.00" vehsPerHour="2">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_6_D3_5" type="Livianos" begin="14400.00" from="542395213#0" to="338566775#3" end="18000.00" vehsPerHour="722" />
+    <flow id="2_A1_5" type="Livianos" begin="14400.00" from="427451695#1" to="49222372#1" end="18000.00" vehsPerHour="684" />
+    <flow id="2_A2_5" type="Livianos" begin="14400.00" from="427451695#1" to="542395217" end="18000.00" vehsPerHour="91" />
+    <flow id="2_A3_6_D3_5" type="Livianos" begin="14400.00" from="427451695#1" to="338566775#3" end="18000.00" vehsPerHour="90" />
+    <flow id="7_C1_5" type="Livianos" begin="14400.00" from="247044712#0" to="338566775#3" end="18000.00" vehsPerHour="506" />
+    <flow id="7_C3_3_C1_5" type="Livianos" begin="14400.00" from="247044712#0" to="542395217" end="18000.00" vehsPerHour="38" />
+    <flow id="7_C3_3_C3_5" type="Livianos" begin="14400.00" from="247044712#0" to="49222372#1" end="18000.00" vehsPerHour="18" />
+    <flow id="8_B1_3_C1_5" type="Livianos" begin="14400.00" from="334948974#1" to="542395217" end="18000.00" vehsPerHour="308" />
+    <flow id="8_B1_3_C3_5" type="Livianos" begin="14400.00" from="334948974#1" to="49222372#1" end="18000.00" vehsPerHour="148" />
+    <flow id="8_B2_5" type="Livianos" begin="14400.00" from="334948974#1" to="E5" end="18000.00" vehsPerHour="188" />
+    <flow id="9_A1_3_C1_5" type="Livianos" begin="14400.00" from="48859314#0" to="542395217" end="18000.00" vehsPerHour="257" />
+    <flow id="9_A1_3_C3_5" type="Livianos" begin="14400.00" from="48859314#0" to="49222372#1" end="18000.00" vehsPerHour="123" />
+    <flow id="9_A2_5" type="Livianos" begin="14400.00" from="48859314#0" to="338566775#3" end="18000.00" vehsPerHour="86" />
+    <flow id="Calle1_3_C1_5" type="Livianos" begin="14400.00" from="47638127" to="542395217" end="18000.00" vehsPerHour="14" />
+    <flow id="Calle1_3_C3_5" type="Livianos" begin="14400.00" from="47638127" to="49222372#1" end="18000.00" vehsPerHour="7" />
+    <flow id="Linea22_5" type="Bus" begin="14400.00" line="L22" from="48859314#0" to="542395217" end="18000.00" vehsPerHour="4">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_5" type="Bus" begin="14400.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="18000.00" vehsPerHour="21">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_5" type="Bus" begin="14400.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="18000.00" vehsPerHour="20">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_5" type="Bus" begin="14400.00" line="L5" from="48859314#0" to="49222372#1" end="18000.00" vehsPerHour="8">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_5" type="Bus" begin="14400.00" line="L7_10_2" from="334948974#1" to="542395217" end="18000.00" vehsPerHour="15">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_5" type="Bus" begin="14400.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="18000.00" vehsPerHour="30">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_5" type="Bus" begin="14400.00" line="Lturi" from="48859314#0" to="338566775#3" end="18000.00" vehsPerHour="4">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_6_D3_6" type="Livianos" begin="18000.00" from="542395213#0" to="338566775#3" end="21600.00" vehsPerHour="656" />
+    <flow id="2_A1_6" type="Livianos" begin="18000.00" from="427451695#1" to="49222372#1" end="21600.00" vehsPerHour="653" />
+    <flow id="2_A2_6" type="Livianos" begin="18000.00" from="427451695#1" to="542395217" end="21600.00" vehsPerHour="85" />
+    <flow id="2_A3_6_D3_6" type="Livianos" begin="18000.00" from="427451695#1" to="338566775#3" end="21600.00" vehsPerHour="104" />
+    <flow id="7_C1_6" type="Livianos" begin="18000.00" from="247044712#0" to="338566775#3" end="21600.00" vehsPerHour="468" />
+    <flow id="7_C3_3_C1_6" type="Livianos" begin="18000.00" from="247044712#0" to="542395217" end="21600.00" vehsPerHour="29" />
+    <flow id="7_C3_3_C3_6" type="Livianos" begin="18000.00" from="247044712#0" to="49222372#1" end="21600.00" vehsPerHour="18" />
+    <flow id="7_C3_6" type="Livianos" begin="18000.00" from="247044712#0" to="45393798#3" end="21600.00" vehsPerHour="13" />
+    <flow id="8_B1_3_C1_6" type="Livianos" begin="18000.00" from="334948974#1" to="542395217" end="21600.00" vehsPerHour="274" />
+    <flow id="8_B1_3_C3_6" type="Livianos" begin="18000.00" from="334948974#1" to="49222372#1" end="21600.00" vehsPerHour="163" />
+    <flow id="8_B1_6" type="Livianos" begin="18000.00" from="334948974#1" to="45393798#2" end="21600.00" vehsPerHour="9" />
+    <flow id="8_B2_6" type="Livianos" begin="18000.00" from="334948974#1" to="E5" end="21600.00" vehsPerHour="198" />
+    <flow id="9_A1_3_C1_6" type="Livianos" begin="18000.00" from="48859314#0" to="542395217" end="21600.00" vehsPerHour="200" />
+    <flow id="9_A1_3_C3_6" type="Livianos" begin="18000.00" from="48859314#0" to="49222372#1" end="21600.00" vehsPerHour="119" />
+    <flow id="9_A1_6" type="Livianos" begin="18000.00" from="48859314#0" to="45393798#3" end="21600.00" vehsPerHour="23" />
+    <flow id="9_A2_6" type="Livianos" begin="18000.00" from="48859314#0" to="338566775#3" end="21600.00" vehsPerHour="100" />
+    <flow id="Linea22_6" type="Bus" begin="18000.00" line="L22" from="48859314#0" to="542395217" end="21600.00" vehsPerHour="8">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_6" type="Bus" begin="18000.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="21600.00" vehsPerHour="19">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_6" type="Bus" begin="18000.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="21600.00" vehsPerHour="21">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_6" type="Bus" begin="18000.00" line="L5" from="48859314#0" to="49222372#1" end="21600.00" vehsPerHour="6">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_6" type="Bus" begin="18000.00" line="L7_10_2" from="334948974#1" to="542395217" end="21600.00" vehsPerHour="16">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_6" type="Bus" begin="18000.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="21600.00" vehsPerHour="36">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_6" type="Bus" begin="18000.00" line="Lturi" from="48859314#0" to="338566775#3" end="21600.00" vehsPerHour="2">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_6_D3_7" type="Livianos" begin="21600.00" from="542395213#0" to="338566775#3" end="25200.00" vehsPerHour="715" />
+    <flow id="2_A1_7" type="Livianos" begin="21600.00" from="427451695#1" to="49222372#1" end="25200.00" vehsPerHour="657" />
+    <flow id="2_A2_7" type="Livianos" begin="21600.00" from="427451695#1" to="542395217" end="25200.00" vehsPerHour="127" />
+    <flow id="2_A3_6_D3_7" type="Livianos" begin="21600.00" from="427451695#1" to="338566775#3" end="25200.00" vehsPerHour="88" />
+    <flow id="7_C1_7" type="Livianos" begin="21600.00" from="247044712#0" to="338566775#3" end="25200.00" vehsPerHour="546" />
+    <flow id="7_C3_3_C1_7" type="Livianos" begin="21600.00" from="247044712#0" to="542395217" end="25200.00" vehsPerHour="64" />
+    <flow id="7_C3_3_C3_7" type="Livianos" begin="21600.00" from="247044712#0" to="49222372#1" end="25200.00" vehsPerHour="20" />
+    <flow id="8_B1_3_C1_7" type="Livianos" begin="21600.00" from="334948974#1" to="542395217" end="25200.00" vehsPerHour="414" />
+    <flow id="8_B1_3_C3_7" type="Livianos" begin="21600.00" from="334948974#1" to="49222372#1" end="25200.00" vehsPerHour="126" />
+    <flow id="8_B2_7" type="Livianos" begin="21600.00" from="334948974#1" to="E5" end="25200.00" vehsPerHour="18" />
+    <flow id="9_A1_3_C1_7" type="Livianos" begin="21600.00" from="48859314#0" to="542395217" end="25200.00" vehsPerHour="259" />
+    <flow id="9_A1_3_C3_7" type="Livianos" begin="21600.00" from="48859314#0" to="49222372#1" end="25200.00" vehsPerHour="79" />
+    <flow id="9_A2_7" type="Livianos" begin="21600.00" from="48859314#0" to="338566775#3" end="25200.00" vehsPerHour="104" />
+    <flow id="Calle1_3_C1_7" type="Livianos" begin="21600.00" from="47638127" to="542395217" end="25200.00" vehsPerHour="54" />
+    <flow id="Calle1_3_C3_7" type="Livianos" begin="21600.00" from="47638127" to="49222372#1" end="25200.00" vehsPerHour="17" />
+    <flow id="Linea22_7" type="Bus" begin="21600.00" line="L22" from="48859314#0" to="542395217" end="25200.00" vehsPerHour="6">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_7" type="Bus" begin="21600.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="25200.00" vehsPerHour="24">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_7" type="Bus" begin="21600.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="25200.00" vehsPerHour="18">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_7" type="Bus" begin="21600.00" line="L5" from="48859314#0" to="49222372#1" end="25200.00" vehsPerHour="8">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_7" type="Bus" begin="21600.00" line="L7_10_2" from="334948974#1" to="542395217" end="25200.00" vehsPerHour="13">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_7" type="Bus" begin="21600.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="25200.00" vehsPerHour="37">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_7" type="Bus" begin="21600.00" line="Lturi" from="48859314#0" to="338566775#3" end="25200.00" vehsPerHour="2">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_6_D3_8" type="Livianos" begin="25200.00" from="542395213#0" to="338566775#3" end="28800.00" vehsPerHour="640" />
+    <flow id="1_B1_8" type="Livianos" begin="25200.00" from="542395213#0" to="45393798#3" end="28800.00" vehsPerHour="60" />
+    <flow id="2_A1_8" type="Livianos" begin="25200.00" from="427451695#1" to="49222372#1" end="28800.00" vehsPerHour="678" />
+    <flow id="2_A2_8" type="Livianos" begin="25200.00" from="427451695#1" to="542395217" end="28800.00" vehsPerHour="136" />
+    <flow id="2_A3_6_D3_8" type="Livianos" begin="25200.00" from="427451695#1" to="338566775#3" end="28800.00" vehsPerHour="44" />
+    <flow id="2_A3_8" type="Livianos" begin="25200.00" from="427451695#1" to="45393798#3" end="28800.00" vehsPerHour="39" />
+    <flow id="7_C1_8" type="Livianos" begin="25200.00" from="247044712#0" to="338566775#3" end="28800.00" vehsPerHour="490" />
+    <flow id="7_C3_3_C1_8" type="Livianos" begin="25200.00" from="247044712#0" to="542395217" end="28800.00" vehsPerHour="55" />
+    <flow id="7_C3_3_C3_8" type="Livianos" begin="25200.00" from="247044712#0" to="49222372#1" end="28800.00" vehsPerHour="21" />
+    <flow id="8_B1_3_C1_8" type="Livianos" begin="25200.00" from="334948974#1" to="542395217" end="28800.00" vehsPerHour="338" />
+    <flow id="8_B1_3_C3_8" type="Livianos" begin="25200.00" from="334948974#1" to="49222372#1" end="28800.00" vehsPerHour="128" />
+    <flow id="8_B2_8" type="Livianos" begin="25200.00" from="334948974#1" to="E5" end="28800.00" vehsPerHour="116" />
+    <flow id="9_A1_3_C1_8" type="Livianos" begin="25200.00" from="48859314#0" to="542395217" end="28800.00" vehsPerHour="236" />
+    <flow id="9_A1_3_C3_8" type="Livianos" begin="25200.00" from="48859314#0" to="49222372#1" end="28800.00" vehsPerHour="90" />
+    <flow id="9_A2_8" type="Livianos" begin="25200.00" from="48859314#0" to="338566775#3" end="28800.00" vehsPerHour="92" />
+    <flow id="Calle1_3_C1_8" type="Livianos" begin="25200.00" from="47638127" to="542395217" end="28800.00" vehsPerHour="17" />
+    <flow id="Calle1_3_C3_8" type="Livianos" begin="25200.00" from="47638127" to="49222372#1" end="28800.00" vehsPerHour="6" />
+    <flow id="Linea22_8" type="Bus" begin="25200.00" line="L22" from="48859314#0" to="542395217" end="28800.00" vehsPerHour="5">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_8" type="Bus" begin="25200.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="28800.00" vehsPerHour="29">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_8" type="Bus" begin="25200.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="28800.00" vehsPerHour="19">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_8" type="Bus" begin="25200.00" line="L5" from="48859314#0" to="49222372#1" end="28800.00" vehsPerHour="7">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_8" type="Bus" begin="25200.00" line="L7_10_2" from="334948974#1" to="542395217" end="28800.00" vehsPerHour="13">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_8" type="Bus" begin="25200.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="28800.00" vehsPerHour="37">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_8" type="Bus" begin="25200.00" line="Lturi" from="48859314#0" to="338566775#3" end="28800.00" vehsPerHour="4">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_6_D3_9" type="Livianos" begin="28800.00" from="542395213#0" to="338566775#3" end="32400.00" vehsPerHour="713" />
+    <flow id="2_A1_9" type="Livianos" begin="28800.00" from="427451695#1" to="49222372#1" end="32400.00" vehsPerHour="673" />
+    <flow id="2_A2_9" type="Livianos" begin="28800.00" from="427451695#1" to="542395217" end="32400.00" vehsPerHour="100" />
+    <flow id="2_A3_6_D3_9" type="Livianos" begin="28800.00" from="427451695#1" to="338566775#3" end="32400.00" vehsPerHour="31" />
+    <flow id="2_A3_9" type="Livianos" begin="28800.00" from="427451695#1" to="45393798#3" end="32400.00" vehsPerHour="51" />
+    <flow id="7_C1_9" type="Livianos" begin="28800.00" from="247044712#0" to="338566775#3" end="32400.00" vehsPerHour="440" />
+    <flow id="7_C3_3_C1_9" type="Livianos" begin="28800.00" from="247044712#0" to="542395217" end="32400.00" vehsPerHour="48" />
+    <flow id="7_C3_3_C3_9" type="Livianos" begin="28800.00" from="247044712#0" to="49222372#1" end="32400.00" vehsPerHour="20" />
+    <flow id="8_B1_3_C1_9" type="Livianos" begin="28800.00" from="334948974#1" to="542395217" end="32400.00" vehsPerHour="364" />
+    <flow id="8_B1_3_C3_9" type="Livianos" begin="28800.00" from="334948974#1" to="49222372#1" end="32400.00" vehsPerHour="154" />
+    <flow id="8_B2_9" type="Livianos" begin="28800.00" from="334948974#1" to="E5" end="32400.00" vehsPerHour="138" />
+    <flow id="9_A1_3_C1_9" type="Livianos" begin="28800.00" from="48859314#0" to="542395217" end="32400.00" vehsPerHour="191" />
+    <flow id="9_A1_3_C3_9" type="Livianos" begin="28800.00" from="48859314#0" to="49222372#1" end="32400.00" vehsPerHour="81" />
+    <flow id="9_A2_9" type="Livianos" begin="28800.00" from="48859314#0" to="338566775#3" end="32400.00" vehsPerHour="80" />
+    <flow id="Calle1_3_C1_9" type="Livianos" begin="28800.00" from="47638127" to="542395217" end="32400.00" vehsPerHour="63" />
+    <flow id="Calle1_3_C3_9" type="Livianos" begin="28800.00" from="47638127" to="49222372#1" end="32400.00" vehsPerHour="27" />
+    <flow id="Linea22_9" type="Bus" begin="28800.00" line="L22" from="48859314#0" to="542395217" end="32400.00" vehsPerHour="3">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_9" type="Bus" begin="28800.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="32400.00" vehsPerHour="22">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_9" type="Bus" begin="28800.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="32400.00" vehsPerHour="19">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_9" type="Bus" begin="28800.00" line="L5" from="48859314#0" to="49222372#1" end="32400.00" vehsPerHour="9">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_9" type="Bus" begin="28800.00" line="L7_10_2" from="334948974#1" to="542395217" end="32400.00" vehsPerHour="14">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_9" type="Bus" begin="28800.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="32400.00" vehsPerHour="36">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_9" type="Bus" begin="28800.00" line="Lturi" from="48859314#0" to="338566775#3" end="32400.00" vehsPerHour="2">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_10" type="Livianos" begin="32400.00" from="542395213#0" to="45393798#3" end="36000.00" vehsPerHour="12" />
+    <flow id="1_B1_6_D3_10" type="Livianos" begin="32400.00" from="542395213#0" to="338566775#3" end="36000.00" vehsPerHour="814" />
+    <flow id="2_A1_10" type="Livianos" begin="32400.00" from="427451695#1" to="49222372#1" end="36000.00" vehsPerHour="686" />
+    <flow id="2_A2_10" type="Livianos" begin="32400.00" from="427451695#1" to="542395217" end="36000.00" vehsPerHour="99" />
+    <flow id="2_A3_10" type="Livianos" begin="32400.00" from="427451695#1" to="45393798#3" end="36000.00" vehsPerHour="17" />
+    <flow id="2_A3_6_D3_10" type="Livianos" begin="32400.00" from="427451695#1" to="338566775#3" end="36000.00" vehsPerHour="76" />
+    <flow id="7_C1_10" type="Livianos" begin="32400.00" from="247044712#0" to="338566775#3" end="36000.00" vehsPerHour="444" />
+    <flow id="7_C3_10" type="Livianos" begin="32400.00" from="247044712#0" to="45393798#3" end="36000.00" vehsPerHour="3" />
+    <flow id="7_C3_3_C1_10" type="Livianos" begin="32400.00" from="247044712#0" to="542395217" end="36000.00" vehsPerHour="51" />
+    <flow id="7_C3_3_C3_10" type="Livianos" begin="32400.00" from="247044712#0" to="49222372#1" end="36000.00" vehsPerHour="20" />
+    <flow id="8_B1_10" type="Livianos" begin="32400.00" from="334948974#1" to="45393798#2" end="36000.00" vehsPerHour="10" />
+    <flow id="8_B1_3_C1_10" type="Livianos" begin="32400.00" from="334948974#1" to="542395217" end="36000.00" vehsPerHour="425" />
+    <flow id="8_B1_3_C3_10" type="Livianos" begin="32400.00" from="334948974#1" to="49222372#1" end="36000.00" vehsPerHour="161" />
+    <flow id="8_B2_10" type="Livianos" begin="32400.00" from="334948974#1" to="E5" end="36000.00" vehsPerHour="158" />
+    <flow id="9_A1_10" type="Livianos" begin="32400.00" from="48859314#0" to="45393798#3" end="36000.00" vehsPerHour="3" />
+    <flow id="9_A1_3_C1_10" type="Livianos" begin="32400.00" from="48859314#0" to="542395217" end="36000.00" vehsPerHour="208" />
+    <flow id="9_A1_3_C3_10" type="Livianos" begin="32400.00" from="48859314#0" to="49222372#1" end="36000.00" vehsPerHour="79" />
+    <flow id="9_A2_10" type="Livianos" begin="32400.00" from="48859314#0" to="338566775#3" end="36000.00" vehsPerHour="96" />
+    <flow id="Linea22_10" type="Bus" begin="32400.00" line="L22" from="48859314#0" to="542395217" end="36000.00" vehsPerHour="7">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_10" type="Bus" begin="32400.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="36000.00" vehsPerHour="22">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_10" type="Bus" begin="32400.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="36000.00" vehsPerHour="16">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_10" type="Bus" begin="32400.00" line="L5" from="48859314#0" to="49222372#1" end="36000.00" vehsPerHour="7">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_10" type="Bus" begin="32400.00" line="L7_10_2" from="334948974#1" to="542395217" end="36000.00" vehsPerHour="13">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_10" type="Bus" begin="32400.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="36000.00" vehsPerHour="40">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_10" type="Bus" begin="32400.00" line="Lturi" from="48859314#0" to="338566775#3" end="36000.00" vehsPerHour="2">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_11" type="Livianos" begin="36000.00" from="542395213#0" to="45393798#3" end="39600.00" vehsPerHour="4" />
+    <flow id="1_B1_6_D3_11" type="Livianos" begin="36000.00" from="542395213#0" to="338566775#3" end="39600.00" vehsPerHour="837" />
+    <flow id="2_A1_11" type="Livianos" begin="36000.00" from="427451695#1" to="49222372#1" end="39600.00" vehsPerHour="706" />
+    <flow id="2_A2_11" type="Livianos" begin="36000.00" from="427451695#1" to="542395217" end="39600.00" vehsPerHour="125" />
+    <flow id="2_A3_11" type="Livianos" begin="36000.00" from="427451695#1" to="45393798#3" end="39600.00" vehsPerHour="10" />
+    <flow id="2_A3_6_D3_11" type="Livianos" begin="36000.00" from="427451695#1" to="338566775#3" end="39600.00" vehsPerHour="71" />
+    <flow id="7_C1_11" type="Livianos" begin="36000.00" from="247044712#0" to="338566775#3" end="39600.00" vehsPerHour="488" />
+    <flow id="7_C3_3_C1_11" type="Livianos" begin="36000.00" from="247044712#0" to="542395217" end="39600.00" vehsPerHour="41" />
+    <flow id="7_C3_3_C3_11" type="Livianos" begin="36000.00" from="247044712#0" to="49222372#1" end="39600.00" vehsPerHour="19" />
+    <flow id="8_B1_3_C1_11" type="Livianos" begin="36000.00" from="334948974#1" to="542395217" end="39600.00" vehsPerHour="374" />
+    <flow id="8_B1_3_C3_11" type="Livianos" begin="36000.00" from="334948974#1" to="49222372#1" end="39600.00" vehsPerHour="176" />
+    <flow id="8_B2_11" type="Livianos" begin="36000.00" from="334948974#1" to="E5" end="39600.00" vehsPerHour="180" />
+    <flow id="9_A1_3_C1_11" type="Livianos" begin="36000.00" from="48859314#0" to="542395217" end="39600.00" vehsPerHour="222" />
+    <flow id="9_A1_3_C3_11" type="Livianos" begin="36000.00" from="48859314#0" to="49222372#1" end="39600.00" vehsPerHour="104" />
+    <flow id="9_A2_11" type="Livianos" begin="36000.00" from="48859314#0" to="338566775#3" end="39600.00" vehsPerHour="76" />
+    <flow id="Calle1_3_C1_11" type="Livianos" begin="36000.00" from="47638127" to="542395217" end="39600.00" vehsPerHour="51" />
+    <flow id="Calle1_3_C3_11" type="Livianos" begin="36000.00" from="47638127" to="49222372#1" end="39600.00" vehsPerHour="24" />
+    <flow id="Linea22_11" type="Bus" begin="36000.00" line="L22" from="48859314#0" to="542395217" end="39600.00" vehsPerHour="6">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_11" type="Bus" begin="36000.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="39600.00" vehsPerHour="27">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_11" type="Bus" begin="36000.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="39600.00" vehsPerHour="22">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_11" type="Bus" begin="36000.00" line="L5" from="48859314#0" to="49222372#1" end="39600.00" vehsPerHour="6">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_11" type="Bus" begin="36000.00" line="L7_10_2" from="334948974#1" to="542395217" end="39600.00" vehsPerHour="17">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_11" type="Bus" begin="36000.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="39600.00" vehsPerHour="33">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_11" type="Bus" begin="36000.00" line="Lturi" from="48859314#0" to="338566775#3" end="39600.00" vehsPerHour="4">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_12" type="Livianos" begin="39600.00" from="542395213#0" to="45393798#3" end="43200.00" vehsPerHour="18" />
+    <flow id="1_B1_6_D3_12" type="Livianos" begin="39600.00" from="542395213#0" to="338566775#3" end="43200.00" vehsPerHour="821" />
+    <flow id="2_A1_12" type="Livianos" begin="39600.00" from="427451695#1" to="49222372#1" end="43200.00" vehsPerHour="644" />
+    <flow id="2_A2_12" type="Livianos" begin="39600.00" from="427451695#1" to="542395217" end="43200.00" vehsPerHour="154" />
+    <flow id="2_A3_12" type="Livianos" begin="39600.00" from="427451695#1" to="45393798#3" end="43200.00" vehsPerHour="3" />
+    <flow id="2_A3_6_D3_12" type="Livianos" begin="39600.00" from="427451695#1" to="338566775#3" end="43200.00" vehsPerHour="125" />
+    <flow id="7_C1_12" type="Livianos" begin="39600.00" from="247044712#0" to="338566775#3" end="43200.00" vehsPerHour="538" />
+    <flow id="7_C3_3_C1_12" type="Livianos" begin="39600.00" from="247044712#0" to="542395217" end="43200.00" vehsPerHour="40" />
+    <flow id="7_C3_3_C3_12" type="Livianos" begin="39600.00" from="247044712#0" to="49222372#1" end="43200.00" vehsPerHour="14" />
+    <flow id="8_B1_3_C1_12" type="Livianos" begin="39600.00" from="334948974#1" to="542395217" end="43200.00" vehsPerHour="402" />
+    <flow id="8_B1_3_C3_12" type="Livianos" begin="39600.00" from="334948974#1" to="49222372#1" end="43200.00" vehsPerHour="138" />
+    <flow id="8_B2_12" type="Livianos" begin="39600.00" from="334948974#1" to="E5" end="43200.00" vehsPerHour="188" />
+    <flow id="9_A1_3_C1_12" type="Livianos" begin="39600.00" from="48859314#0" to="542395217" end="43200.00" vehsPerHour="234" />
+    <flow id="9_A1_3_C3_12" type="Livianos" begin="39600.00" from="48859314#0" to="49222372#1" end="43200.00" vehsPerHour="80" />
+    <flow id="9_A2_12" type="Livianos" begin="39600.00" from="48859314#0" to="338566775#3" end="43200.00" vehsPerHour="34" />
+    <flow id="Calle1_3_C1_12" type="Livianos" begin="39600.00" from="47638127" to="542395217" end="43200.00" vehsPerHour="78" />
+    <flow id="Calle1_3_C3_12" type="Livianos" begin="39600.00" from="47638127" to="49222372#1" end="43200.00" vehsPerHour="27" />
+    <flow id="Linea22_12" type="Bus" begin="39600.00" line="L22" from="48859314#0" to="542395217" end="43200.00" vehsPerHour="5">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_12" type="Bus" begin="39600.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="43200.00" vehsPerHour="25">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_12" type="Bus" begin="39600.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="43200.00" vehsPerHour="25">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_12" type="Bus" begin="39600.00" line="L5" from="48859314#0" to="49222372#1" end="43200.00" vehsPerHour="7">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_12" type="Bus" begin="39600.00" line="L7_10_2" from="334948974#1" to="542395217" end="43200.00" vehsPerHour="12">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_12" type="Bus" begin="39600.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="43200.00" vehsPerHour="39">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_12" type="Bus" begin="39600.00" line="Lturi" from="48859314#0" to="338566775#3" end="43200.00" vehsPerHour="2">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_6_D3_13" type="Livianos" begin="43200.00" from="542395213#0" to="338566775#3" end="46800.00" vehsPerHour="777" />
+    <flow id="2_A1_13" type="Livianos" begin="43200.00" from="427451695#1" to="49222372#1" end="46800.00" vehsPerHour="619" />
+    <flow id="2_A2_13" type="Livianos" begin="43200.00" from="427451695#1" to="542395217" end="46800.00" vehsPerHour="163" />
+    <flow id="2_A3_6_D3_13" type="Livianos" begin="43200.00" from="427451695#1" to="338566775#3" end="46800.00" vehsPerHour="114" />
+    <flow id="7_C1_13" type="Livianos" begin="43200.00" from="247044712#0" to="338566775#3" end="46800.00" vehsPerHour="486" />
+    <flow id="7_C3_3_C1_13" type="Livianos" begin="43200.00" from="247044712#0" to="542395217" end="46800.00" vehsPerHour="67" />
+    <flow id="7_C3_3_C3_13" type="Livianos" begin="43200.00" from="247044712#0" to="49222372#1" end="46800.00" vehsPerHour="17" />
+    <flow id="8_B1_3_C1_13" type="Livianos" begin="43200.00" from="334948974#1" to="542395217" end="46800.00" vehsPerHour="459" />
+    <flow id="8_B1_3_C3_13" type="Livianos" begin="43200.00" from="334948974#1" to="49222372#1" end="46800.00" vehsPerHour="115" />
+    <flow id="8_B2_13" type="Livianos" begin="43200.00" from="334948974#1" to="E5" end="46800.00" vehsPerHour="144" />
+    <flow id="9_A1_3_C1_13" type="Livianos" begin="43200.00" from="48859314#0" to="542395217" end="46800.00" vehsPerHour="271" />
+    <flow id="9_A1_3_C3_13" type="Livianos" begin="43200.00" from="48859314#0" to="49222372#1" end="46800.00" vehsPerHour="67" />
+    <flow id="9_A2_13" type="Livianos" begin="43200.00" from="48859314#0" to="338566775#3" end="46800.00" vehsPerHour="52" />
+    <flow id="Calle1_3_C1_13" type="Livianos" begin="43200.00" from="47638127" to="542395217" end="46800.00" vehsPerHour="1" />
+    <flow id="Linea22_13" type="Bus" begin="43200.00" line="L22" from="48859314#0" to="542395217" end="46800.00" vehsPerHour="7">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_13" type="Bus" begin="43200.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="46800.00" vehsPerHour="22">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_13" type="Bus" begin="43200.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="46800.00" vehsPerHour="23">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_13" type="Bus" begin="43200.00" line="L5" from="48859314#0" to="49222372#1" end="46800.00" vehsPerHour="9">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_13" type="Bus" begin="43200.00" line="L7_10_2" from="334948974#1" to="542395217" end="46800.00" vehsPerHour="12">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_13" type="Bus" begin="43200.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="46800.00" vehsPerHour="40">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_13" type="Bus" begin="43200.00" line="Lturi" from="48859314#0" to="338566775#3" end="46800.00" vehsPerHour="2">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+    <flow id="1_B1_14" type="Livianos" begin="46800.00" from="542395213#0" to="45393798#3" end="50400.00" vehsPerHour="52" />
+    <flow id="1_B1_6_D3_14" type="Livianos" begin="46800.00" from="542395213#0" to="338566775#3" end="50400.00" vehsPerHour="608" />
+    <flow id="2_A1_14" type="Livianos" begin="46800.00" from="427451695#1" to="49222372#1" end="50400.00" vehsPerHour="534" />
+    <flow id="2_A2_14" type="Livianos" begin="46800.00" from="427451695#1" to="542395217" end="50400.00" vehsPerHour="125" />
+    <flow id="2_A3_14" type="Livianos" begin="46800.00" from="427451695#1" to="45393798#3" end="50400.00" vehsPerHour="16" />
+    <flow id="2_A3_6_D3_14" type="Livianos" begin="46800.00" from="427451695#1" to="338566775#3" end="50400.00" vehsPerHour="98" />
+    <flow id="7_C1_14" type="Livianos" begin="46800.00" from="247044712#0" to="338566775#3" end="50400.00" vehsPerHour="404" />
+    <flow id="7_C3_14" type="Livianos" begin="46800.00" from="247044712#0" to="45393798#3" end="50400.00" vehsPerHour="3" />
+    <flow id="7_C3_3_C1_14" type="Livianos" begin="46800.00" from="247044712#0" to="542395217" end="50400.00" vehsPerHour="38" />
+    <flow id="7_C3_3_C3_14" type="Livianos" begin="46800.00" from="247044712#0" to="49222372#1" end="50400.00" vehsPerHour="13" />
+    <flow id="8_B1_14" type="Livianos" begin="46800.00" from="334948974#1" to="45393798#2" end="50400.00" vehsPerHour="3" />
+    <flow id="8_B1_3_C1_14" type="Livianos" begin="46800.00" from="334948974#1" to="542395217" end="50400.00" vehsPerHour="372" />
+    <flow id="8_B1_3_C3_14" type="Livianos" begin="46800.00" from="334948974#1" to="49222372#1" end="50400.00" vehsPerHour="125" />
+    <flow id="8_B2_14" type="Livianos" begin="46800.00" from="334948974#1" to="E5" end="50400.00" vehsPerHour="126" />
+    <flow id="9_A1_14" type="Livianos" begin="46800.00" from="48859314#0" to="45393798#3" end="50400.00" vehsPerHour="4" />
+    <flow id="9_A1_3_C1_14" type="Livianos" begin="46800.00" from="48859314#0" to="542395217" end="50400.00" vehsPerHour="276" />
+    <flow id="9_A1_3_C3_14" type="Livianos" begin="46800.00" from="48859314#0" to="49222372#1" end="50400.00" vehsPerHour="92" />
+    <flow id="9_A2_14" type="Livianos" begin="46800.00" from="48859314#0" to="338566775#3" end="50400.00" vehsPerHour="38" />
+    <flow id="Linea22_14" type="Bus" begin="46800.00" line="L22" from="48859314#0" to="542395217" end="50400.00" vehsPerHour="5">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea24_15_16_27_14" type="Bus" begin="46800.00" line="L24_15_16_27" from="334948974#1" to="338566775#3" end="50400.00" vehsPerHour="18">
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Linea27_18_12_14" type="Bus" begin="46800.00" departPos="0.00" line="L27_18_12" from="427451695#1" to="49222372#1" end="50400.00" vehsPerHour="14">
+        <stop busStop="bs_9" duration="30.00" />
+    </flow>
+    <flow id="Linea5_14" type="Bus" begin="46800.00" line="L5" from="48859314#0" to="49222372#1" end="50400.00" vehsPerHour="9">
+        <stop busStop="bs_8" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+    </flow>
+    <flow id="Linea7_10_2_14" type="Bus" begin="46800.00" line="L7_10_2" from="334948974#1" to="542395217" end="50400.00" vehsPerHour="9">
+        <stop busStop="bs_4" duration="30.00" />
+        <stop busStop="bs_2" duration="30.00" />
+        <stop busStop="bs_3" duration="30.00" />
+    </flow>
+    <flow id="Linea7_12_22_5_14" type="Bus" begin="46800.00" line="L7_12_22_5" from="542395213#0" to="338566775#3" end="50400.00" vehsPerHour="33">
+        <stop busStop="bs_0" duration="30.00" />
+        <stop busStop="bs_1" duration="30.00" />
+        <stop busStop="bs_7" duration="30.00" />
+    </flow>
+    <flow id="Turi_14" type="Bus" begin="46800.00" line="Lturi" from="48859314#0" to="338566775#3" end="50400.00" vehsPerHour="2">
+        <stop busStop="bs_7" duration="30.00" line="Lturi L24_15_16_27" />
+    </flow>
+</routes>

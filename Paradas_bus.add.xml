@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-07-04 07:42:01 by Eclipse SUMO netedit Version v1_19_0+1468-8209a5b7497
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- StoppingPlaces -->
+    <busStop id="bs_0" lane="542395213#1_0" startPos="19.90" endPos="49.90" lines="L7_12_22_5" personCapacity="7"/>
+    <busStop id="bs_1" lane="545016890_0" startPos="7.63" endPos="27.63" lines="L3 L7_12_22_5"/>
+    <busStop id="bs_2" lane="542402344#1_0" startPos="10.00" endPos="37.00" lines="L5 L22 L7_10_2"/>
+    <busStop id="bs_3" lane="542395217_0" startPos="32.51" endPos="62.51" lines="L1 L22 L7_10_2" personCapacity="7"/>
+    <busStop id="bs_4" lane="E3_0" startPos="4.97" endPos="24.97" lines="L7_10_2"/>
+    <busStop id="bs_5" lane="42143919_0" startPos="11.10" endPos="41.11"/>
+    <busStop id="bs_7" lane="338566775#0_0" startPos="9.46" endPos="69.46" lines="Lturi L24_15_16_27 L7_12_22_5"/>
+    <busStop id="bs_8" lane="48859314#1_0" startPos="12.49" endPos="42.49" lines="L22"/>
+    <busStop id="bs_9" lane="427451695#2_0" startPos="39.32" endPos="69.32" lines="L27_18_12" personCapacity="7"/>
+    <!-- Detectors -->
+    <entryExitDetector id="e3_0" pos="521.63,715.12" freq="3600.00" file="Interseccion_1.xml">
+        <detEntry lane="542395213#1_1" pos="60.00"/>
+        <detEntry lane="542395213#1_0" pos="60.00"/>
+        <detEntry lane="427451695#2_1" pos="73.00"/>
+        <detEntry lane="427451695#2_0" pos="73.00"/>
+        <detExit lane="542395222#1_1" pos="7.50"/>
+        <detExit lane="542395222#1_0" pos="7.50"/>
+    </entryExitDetector>
+    <entryExitDetector id="e3_1" pos="966.80,398.47" freq="3600.00" file="Interseccion_2.xml">
+        <detEntry lane="E0_1" pos="14.50"/>
+        <detEntry lane="E0_0" pos="14.50"/>
+        <detExit lane="338566775#0_0" pos="4.00"/>
+        <detExit lane="338566775#0_1" pos="4.00"/>
+        <detExit lane="338566775#0_2" pos="4.00"/>
+    </entryExitDetector>
+    <entryExitDetector id="e3_2" pos="991.42,448.55" freq="3600.00" file="Interseccion_3.xml">
+        <detEntry lane="48859314#1_1" pos="49.00"/>
+        <detEntry lane="48859314#1_0" pos="49.00"/>
+        <detEntry lane="334948974#2_1" pos="27.00"/>
+        <detEntry lane="334948974#2_0" pos="27.00"/>
+        <detEntry lane="992504611_0" pos="26.50"/>
+        <detEntry lane="992504611_1" pos="26.50"/>
+        <detExit lane="E3_0" pos="29.00"/>
+        <detExit lane="E3_1" pos="29.00"/>
+    </entryExitDetector>
+</additional>
