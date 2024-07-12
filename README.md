@@ -15,3 +15,6 @@
   <li>Para la generación de los vehículos y rutas, debemos contar con el archivo "ruta1_completo_procesar.rou.xml"</li>
   <li>Adicional agregamos un archivo para las paradas de buses "Paradas_bus.add.xml"</li>
 </ul>
+<ul>
+  <li>Los datos proporcionados por la municipalidad se encuentran en "Semaforos_avLoja_Abril-Completo"</li>
+</ul>
